@@ -4,66 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzeeter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Explorar</a></li>
-        <li><a href="#">Notificações</a></li>
-        <li><a href="#">Mensagens</a></li>
-        <li><a href="#">Favoritos</a></li>
-        <li><a href="#">Listas</a></li>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#">Mais</a></li>
-    </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-2 d-none d-md-block bg-light sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="logo.png" alt="Tzeeter Logo"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="explore.png" alt="Explorar Ícone"> Explorar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="notificacoes.png" alt="Notificações Ícone"> Notificações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="mensagens.png" alt="Mensagens Ícone"> Mensagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary w-100" href="#">Tzeetar</a>
+                    </li>
+                </ul>
+            </nav>
 
-    <img src="icon.png" alt="Foto do Usuário" width="64" height="64">
+            <main class="col-10 col-md-8 bg-white">
+                <section class="profile-header text-center p-4">
+                    <img src="profile.png" class="rounded-circle" alt="Foto do Usuário" width="100">
+                    <h4>Antonio Matheus de Oliveira Lima</h4>
+                    <p>@matheuslima</p>
+                    <button class="btn btn-outline-secondary">Editar Perfil</button>
+                </section>
 
-    <h4>Antonio Matheus de Oliveira Lima</h4>
-    <h5>@matheuslima</h5>
+                <section class="tweets">
+                    <div class="tweet border p-3 mb-3">
+                        <h5>Antonio Matheus</h5>
+                        <p>5 de janeiro de 2025</p>
+                        <p>Descobri que café com canela é incrível!</p>
+                        <div>
+                            <button class="btn btn-link">Responder</button>
+                            <button class="btn btn-link">Retweet</button>
+                            <button class="btn btn-link">Curtir</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
-    <button>Editar Perfil</button>
-
-    <ul>
-        <li><a href="#">UFC - Quixadá</a></li>
-        <li><a href="#">Entrou em janeiro de 2018</a></li>
-    </ul>
-
-    <ul>
-        <li><a href="#"><strong>120</strong> Seguindo</a></li>
-        <li><a href="#"><strong>300</strong> Seguidores</a></li>
-        <li><a href="#"><strong>150</strong> Tweets</a></li>
-    </ul>
-
-    <section class="tweet">
-        <img src="icon.png" alt="Foto do Usuário" width="32" height="32">
-        <h4>Antonio Matheus de Oliveira Lima</h4>
-        <h5>@matheuslima</h5>
-        <p>5 de janeiro de 2025</p>
-        <p>Acabei de descobrir que o café fica ainda melhor com uma pitada de canela. A vida é cheia de pequenas surpresas!</p>
-        <ul>
-            <li><a href="#" class="reply">Responder</a></li>
-            <li><a href="#" class="retweet">Retweetar</a></li>
-            <li><a href="#" class="like">Curtir</a></li>
-            <li><a href="#" class="share">Compartilhar</a></li>
-        </ul>
-    </section>
-
-    <section class="tweet">
-        <img src="icon.png" alt="Foto do Usuário" width="32" height="32">
-        <h4>Antonio Matheus de Oliveira Lima</h4>
-        <h5>@matheuslima</h5>
-        <p>01 de janeiro de 2002</p>
-        <p>Algo muito ruim está acontecendo em algum lugar do mundo... Gmail está fora do ar.</p>
-        <ul>
-            <li><a href="#" class="reply">Responder</a></li>
-            <li><a href="#" class="retweet">Retweetar</a></li>
-            <li><a href="#" class="like">Curtir</a></li>
-            <li><a href="#" class="share">Compartilhar</a></li>
-        </ul>
-    </section>
+            <aside class="col-2 d-none d-md-block bg-light">
+                <div class="search p-3">
+                    <input type="text" class="form-control rounded-pill" placeholder="Buscar">
+                </div>
+                <div class="suggestions p-3">
+                    <h6>Talvez você curta</h6>
+                    <div class="suggestion d-flex align-items-center mb-3">
+                        <img src="user1.png" alt="Carlos" width="48" class="rounded-circle">
+                        <div class="ms-2">
+                            <a href="#">Carlos</a>
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">Seguir</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
 </body>
 </html>
-
-
